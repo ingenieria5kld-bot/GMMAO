@@ -1,0 +1,5 @@
+{
+  "name": "NavalGMAO - Mantenimiento Auxiliar",
+  "description": "Sistema GMAO PWA para mantenimiento de equipos eléctricos y refrigeración a bordo, con soporte offline 100% via IndexedDB.",
+  "requestFramePermissions": []
+}
