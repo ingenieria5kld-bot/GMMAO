@@ -56,10 +56,15 @@ export interface Part {
 export interface MaintenancePlan {
   id?: number;
   assetId: number;
-  frequencyDays: number;
-  lastExecution: string;
-  nextExecution: string;
-  checklist: string[];
+  type: 'Correctivo' | 'Preventivo' | 'Predictivo';
+  description: string;
+  estimatedHours: number;
+  frequencyValue?: number;
+  frequencyUnit?: 'Horas' | 'Días' | 'Semanas' | 'Meses';
+  lastExecution?: string;
+  nextExecution?: string;
+  triggerCondition?: string;
+  checklist?: string[];
 }
 
 export interface Personnel {
